@@ -7,32 +7,54 @@
 {% block main %}
 
     {% include '@fo/components/flash-messages.html.twig' %}
-    <div class="slideshow-container">
-        <section class="centerBetween fullWidth alignInit Slide fade" id="entreprise">
-            <article class="midWidth">
-                <h2 class="gel-sBold">Entreprise</h2>
-                <p class="pop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, facere! Reiciendis incidunt
-                    facere repudiandae necessitatibus eligendi. Inventore vel, tenetur quia, alias aperiam</p>
-                <a class="btn pop">En savoir plus</a>
-            </article>
-            <div class="midWidth">
-                <img src="{{ asset('images/entreprise.jpg') }}" alt="entreprise">
-            </div>
-        </section>
+{#    <div class="slideshow-container">#}
+{#        <section class="centerBetween fullWidth alignInit" id="entreprise">#}
+{#            <article class="midWidth">#}
+{#                <h2 class="gel-sBold">Entreprise</h2>#}
+{#                <p class="pop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, facere! Reiciendis incidunt#}
+{#                    facere repudiandae necessitatibus eligendi. Inventore vel, tenetur quia, alias aperiam</p>#}
+{#                <a class="btn pop">En savoir plus</a>#}
+{#            </article>#}
+{#            <div class="midWidth">#}
+{#                <img src="{{ asset('images/entreprise.jpg') }}" alt="entreprise">#}
+{#            </div>#}
+{#        </section>#}
 
-        <section class="centerBetween fullWidth alignInit Slide fade" id="zerodechet">
-            <article class="midWidth">
-                <h2 class="gel-bold">Zéro déchets</h2>
-                <p class="pop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, facere! Reiciendis incidunt facere repudiandae necessitatibus eligendi. Inventore vel, tenetur quia, alias aperiam</p>
-                <a class="btn pop">En savoir plus</a>
-            </article>
-            <div class="midWidth">
-                <img src="{{ asset('images/dechet.jpg') }}" alt="dechet">
+{#        <section class="centerBetween fullWidth alignInit" id="zerodechet">#}
+{#            <article class="midWidth">#}
+{#                <h2 class="gel-bold">Zéro déchets</h2>#}
+{#                <p class="pop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, facere! Reiciendis incidunt facere repudiandae necessitatibus eligendi. Inventore vel, tenetur quia, alias aperiam</p>#}
+{#                <a class="btn pop">En savoir plus</a>#}
+{#            </article>#}
+{#            <div class="midWidth">#}
+{#                <img src="{{ asset('images/dechet.jpg') }}" alt="dechet">#}
+{#            </div>#}
+{#        </section>#}
+
+        <div class="cont-slide">
+            <div class="cont-txt">
+                <div>
+                    <h2 class="gel-sBold">Entreprise</h2>
+                    <p class="pop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, facere! Reiciendis incidunt facere repudiandae necessitatibus eligendi. Inventore vel, tenetur quia, alias aperiam</p>
+                    <a class="btn pop">En savoir plus</a>
+                </div>
+                <div>
+                    <h2 class="gel-sBold">Entreprise</h2>
+                    <p class="pop">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, facere! Reiciendis incidunt facere repudiandae necessitatibus eligendi. Inventore vel, tenetur quia, alias aperiam</p>
+                    <a class="btn pop">En savoir plus</a>
+                </div>
             </div>
-        </section>
-        <a class="prev" id="slideback">&#10094;</a>
-        <a class="next" id="slideforward">&#10095;</a>
-    </div>
+            <div class="cont-img">
+                <div>
+                    <img id="img1" src="{{ asset('images/entreprise.jpg') }}" alt="entreprise">
+                </div>
+                <div>
+                    <img id="img2" src="{{ asset('images/dechet.jpg') }}" alt="zero dechet">
+                </div>
+            </div>
+        </div>
+
+{#    </div>#}
 
     <section id="produit">
         <p class="gel-bold title-suggest title-suggest-home">Produits</p>

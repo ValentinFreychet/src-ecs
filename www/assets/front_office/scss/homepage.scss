@@ -442,3 +442,69 @@ main{
   }
 
 }
+
+/*Slide home*/
+.cont-slide{
+  height: 150vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  .cont-txt{
+    height: 100%;
+    width: 50%;
+    background: $lightGrey;
+
+    div{
+      height: 75vh;
+      width: 80%;
+      margin-left: 10%;
+      //border: solid;
+      padding-top: 10%;
+
+      h2{
+        color:$darkGreen;
+        font-size: $f40;
+      }
+
+      p{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .cont-img{
+    height:100%;
+    width:50%;
+    //border: solid;
+    position: relative;
+    overflow: hidden;
+
+    div{
+      height: 100%;
+      width:100%;
+      //border: solid red;
+
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+    div:first-child{
+
+      img{
+        //position: fixed;
+      }
+    }
+    
+    div:nth-child(2){
+      position: absolute;
+      top: 0;
+      height: 0;
+    }
+  }
+}
