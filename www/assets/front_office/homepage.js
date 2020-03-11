@@ -1,6 +1,7 @@
 import * as $ from "jquery";
 require('./scss/homepage.scss');
 require('./ts/partials/layout.ts');
+require('slick-carousel');
 
 // let slideIndex = 1;
 // showSlides(slideIndex);
@@ -19,7 +20,7 @@ require('./ts/partials/layout.ts');
 //         showSlides(slideIndex += 1);
 //     });
 // }
-
+//
 // function showSlides(n : number) {
 //     let i;
 //     let slides = document.getElementsByClassName("Slide")as HTMLCollectionOf<HTMLElement>;
@@ -92,6 +93,6 @@ $(document).ready(function(){
         }
     });
 
-
+    // $('.slideshow-container').slick();
 
 });
